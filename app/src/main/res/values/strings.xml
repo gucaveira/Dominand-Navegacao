@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dominando Navegacao</string>
+    <string name="app_name">Navegacao</string>
     <string name="option_tab">Abas</string>
     <string name="option_bottom">Bottom</string>
     <string name="option_pager">View Pager</string>
