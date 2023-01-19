@@ -28,9 +28,9 @@ class FirstLevelFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_first_level, container, false)
-    }
+    ) = FragmentFirstLevelBinding.inflate(inflater, container, false).apply {
+        _binding = this
+    }.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

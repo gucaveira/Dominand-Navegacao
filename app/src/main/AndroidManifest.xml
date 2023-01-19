@@ -12,9 +12,14 @@
         android:theme="@style/Theme.DominandoNavegacao"
         tools:targetApi="31">
         <activity
+            android:name=".TabsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
-            android:theme="@style/MainTheme"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/MainTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
