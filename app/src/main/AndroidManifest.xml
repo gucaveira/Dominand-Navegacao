@@ -12,9 +12,13 @@
         android:theme="@style/Theme.DominandoNavegacao"
         tools:targetApi="31">
         <activity
+            android:name=".PagerActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".BottomNavActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TabsActivity"
             android:exported="false"
